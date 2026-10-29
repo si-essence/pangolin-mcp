@@ -1,0 +1,2032 @@
+{
+ "openapi": "3.0.0",
+ "info": {
+  "title": "Route fixture (paths, methods, operationIds only)",
+  "version": "v1"
+ },
+ "paths": {
+  "/org/{orgId}/site": {
+   "put": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/org/{orgId}/role": {
+   "put": {
+    "tags": [
+     "Role"
+    ]
+   }
+  },
+  "/target/{targetId}": {
+   "get": {
+    "tags": [
+     "Resource Target"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Resource Target"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Resource Target"
+    ]
+   }
+  },
+  "/resource/{resourceId}/target": {
+   "put": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/target": {
+   "put": {
+    "tags": [
+     "Public Resource",
+     "Resource Target"
+    ]
+   }
+  },
+  "/ai-provider/{providerId}/target": {
+   "put": {
+    "tags": [
+     "AI Provider"
+    ]
+   }
+  },
+  "/resource/{resourceId}/targets": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/targets": {
+   "get": {
+    "tags": [
+     "Public Resource",
+     "Resource Target"
+    ]
+   }
+  },
+  "/ai-provider/{providerId}/targets": {
+   "get": {
+    "tags": [
+     "AI Provider"
+    ]
+   }
+  },
+  "/site/{siteId}": {
+   "post": {
+    "tags": [
+     "Site"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Site"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/org/{orgId}/sites": {
+   "get": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/org/{orgId}/pick-site-defaults": {
+   "get": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/org/{orgId}": {
+   "get": {
+    "tags": [
+     "Organization"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Organization"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Organization"
+    ]
+   }
+  },
+  "/resource/{resourceId}/roles": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/roles": {
+   "post": {
+    "tags": [
+     "Public Resource",
+     "Role"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Public Resource",
+     "Role"
+    ]
+   }
+  },
+  "/role/{roleId}": {
+   "get": {
+    "tags": [
+     "Role"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Role"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Role"
+    ]
+   }
+  },
+  "/org/{orgId}/roles": {
+   "get": {
+    "tags": [
+     "Role"
+    ]
+   }
+  },
+  "/orgs": {
+   "get": {
+    "tags": [
+     "Organization"
+    ]
+   }
+  },
+  "/org/{orgId}/user/{userId}/check": {
+   "get": {
+    "tags": [
+     "Organization",
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/reset-bandwidth": {
+   "post": {
+    "tags": [
+     "Organization",
+     "Site"
+    ]
+   }
+  },
+  "/admin/orgs": {
+   "get": {
+    "tags": [
+     "Organization"
+    ]
+   }
+  },
+  "/org/{orgId}/resource/{niceId}": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/resource/{resourceId}": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}": {
+   "get": {
+    "tags": [
+     "Public Resource"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/org/{orgId}/certificate/{domainId}/{domain}": {
+   "get": {
+    "tags": [
+     "Certificate"
+    ]
+   }
+  },
+  "/certificate/{certId}": {
+   "post": {
+    "tags": [
+     "Certificate"
+    ]
+   }
+  },
+  "/org/{orgId}/resources": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/org/{orgId}/public-resources": {
+   "get": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/users": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/users": {
+   "post": {
+    "tags": [
+     "Public Resource",
+     "User"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Public Resource",
+     "User"
+    ]
+   }
+  },
+  "/resource/{resourceId}/password": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/password": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/pincode": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/pincode": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/whitelist": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/whitelist": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/rule": {
+   "put": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/rule": {
+   "put": {
+    "tags": [
+     "Public Resource",
+     "Rule"
+    ]
+   }
+  },
+  "/resource/{resourceId}/rule/{ruleId}": {
+   "delete": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/rule/{ruleId}": {
+   "delete": {
+    "tags": [
+     "Public Resource",
+     "Rule"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource",
+     "Rule"
+    ]
+   }
+  },
+  "/resource/{resourceId}/rules": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/rules": {
+   "get": {
+    "tags": [
+     "Public Resource",
+     "Rule"
+    ]
+   }
+  },
+  "/resource/{resourceId}/header-auth": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/header-auth": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/whitelist/add": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/whitelist/add": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/whitelist/remove": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/whitelist/remove": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/roles/add": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/roles/add": {
+   "post": {
+    "tags": [
+     "Public Resource",
+     "Role"
+    ]
+   }
+  },
+  "/resource/{resourceId}/roles/remove": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/roles/remove": {
+   "post": {
+    "tags": [
+     "Public Resource",
+     "Role"
+    ]
+   }
+  },
+  "/resource/{resourceId}/users/add": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/users/add": {
+   "post": {
+    "tags": [
+     "Public Resource",
+     "User"
+    ]
+   }
+  },
+  "/resource/{resourceId}/users/remove": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/users/remove": {
+   "post": {
+    "tags": [
+     "Public Resource",
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/resources-names": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/org/{orgId}/public-resource-names": {
+   "get": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/org/{orgId}/resource-policy/{niceId}": {
+   "get": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}": {
+   "get": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}": {
+   "get": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource/{resourceId}/policies": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/policies": {
+   "get": {
+    "tags": [
+     "Public Resource",
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource/{resourceId}/ai-models": {
+   "get": {
+    "tags": [
+     "Public Resource"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/ai-models/add": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/ai-models/remove": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/ai-providers": {
+   "get": {
+    "tags": [
+     "Public Resource"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/ai-providers/add": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/ai-providers/remove": {
+   "post": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/blueprint": {
+   "get": {
+    "tags": [
+     "Public Resource",
+     "Blueprint"
+    ]
+   }
+  },
+  "/resource/{resourceId}/mtls/certificate/{mtlsCertificateId}": {
+   "delete": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/mtls/certificate/{mtlsCertificateId}": {
+   "delete": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/mtls/certificate": {
+   "put": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/mtls/certificate": {
+   "put": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource/{resourceId}/mtls/certificates": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/mtls/certificates": {
+   "get": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/access-control": {
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourceId}/access-control": {
+   "post": {
+    "tags": [
+     "Public Resource Policy",
+     "User"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy",
+     "User"
+    ]
+   }
+  },
+  "/resource-policy/{resourceId}/access-control": {
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/password": {
+   "post": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/password": {
+   "post": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/pincode": {
+   "post": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/pincode": {
+   "post": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/header-auth": {
+   "post": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/header-auth": {
+   "post": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/whitelist": {
+   "post": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/whitelist": {
+   "post": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/rules": {
+   "post": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/rules": {
+   "post": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   },
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/mtls/certificate": {
+   "put": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/mtls/certificate": {
+   "put": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/mtls/certificates": {
+   "get": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/mtls/certificates": {
+   "get": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/resource-policy/{resourcePolicyId}/mtls/certificate/{mtlsCertificateId}": {
+   "delete": {
+    "tags": [
+     "Public Resource Policy (Legacy)"
+    ]
+   }
+  },
+  "/public-resource-policy/{resourcePolicyId}/mtls/certificate/{mtlsCertificateId}": {
+   "delete": {
+    "tags": [
+     "Public Resource Policy"
+    ]
+   }
+  },
+  "/org/{orgId}/domains": {
+   "get": {
+    "tags": [
+     "Domain"
+    ]
+   }
+  },
+  "/org/{orgId}/domain/{domainId}": {
+   "get": {
+    "tags": [
+     "Domain"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Domain"
+    ]
+   },
+   "patch": {
+    "tags": [
+     "Domain"
+    ]
+   }
+  },
+  "/org/{orgId}/domain/{domainId}/dns-records": {
+   "get": {
+    "tags": [
+     "Domain"
+    ]
+   }
+  },
+  "/org/{orgId}/users": {
+   "get": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/create-invite": {
+   "post": {
+    "tags": [
+     "User Invitation"
+    ]
+   }
+  },
+  "/org/{orgId}/user/{userId}": {
+   "get": {
+    "tags": [
+     "User"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Organization"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/user-by-username": {
+   "get": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/users": {
+   "get": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/user/{userId}": {
+   "get": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/user/{userId}/server-admin": {
+   "post": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/invitations": {
+   "get": {
+    "tags": [
+     "User Invitation"
+    ]
+   }
+  },
+  "/org/{orgId}/invitations/{inviteId}": {
+   "delete": {
+    "tags": [
+     "User Invitation"
+    ]
+   }
+  },
+  "/user/{userId}/2fa": {
+   "post": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/pick-client-defaults": {
+   "get": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}/archive": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}/unarchive": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}/unblock": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/org/{orgId}/clients": {
+   "get": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/org/{orgId}/user-devices": {
+   "get": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Client"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/org/{orgId}/client/{niceId}": {
+   "get": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}": {
+   "get": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{siteResourceId}": {
+   "get": {
+    "tags": [
+     "Private Resource"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Private Resource"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/org/{orgId}/site/{siteId}/resource/nice/{niceId}": {
+   "get": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/org/{orgId}/site/{siteId}/resources": {
+   "get": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/org/{orgId}/site/{siteId}/private-resources": {
+   "get": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/org/{orgId}/site-resources": {
+   "get": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/org/{orgId}/private-resources": {
+   "get": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/roles": {
+   "get": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/roles": {
+   "get": {
+    "tags": [
+     "Private Resource",
+     "Role"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource",
+     "Role"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/users": {
+   "get": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/users": {
+   "get": {
+    "tags": [
+     "Private Resource",
+     "User"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource",
+     "User"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/clients": {
+   "get": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/clients": {
+   "get": {
+    "tags": [
+     "Private Resource",
+     "Client"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource",
+     "Client"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/ai-models": {
+   "get": {
+    "tags": [
+     "Private Resource"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/ai-models/add": {
+   "post": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/ai-models/remove": {
+   "post": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/ai-providers": {
+   "get": {
+    "tags": [
+     "Private Resource"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/ai-providers/add": {
+   "post": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/ai-providers/remove": {
+   "post": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/blueprint": {
+   "get": {
+    "tags": [
+     "Private Resource",
+     "Blueprint"
+    ]
+   }
+  },
+  "/resource/{resourceId}/access-token": {
+   "post": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/access-token": {
+   "post": {
+    "tags": [
+     "Public Resource",
+     "Access Token"
+    ]
+   }
+  },
+  "/org/{orgId}/access-tokens": {
+   "get": {
+    "tags": [
+     "Access Token"
+    ]
+   }
+  },
+  "/resource/{resourceId}/access-tokens": {
+   "get": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/public-resource/{resourceId}/access-tokens": {
+   "get": {
+    "tags": [
+     "Public Resource",
+     "Access Token"
+    ]
+   }
+  },
+  "/access-token/{accessTokenId}": {
+   "delete": {
+    "tags": [
+     "Access Token"
+    ]
+   }
+  },
+  "/idp/oidc": {
+   "put": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   }
+  },
+  "/idp/{idpId}/oidc": {
+   "post": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   }
+  },
+  "/idp/{idpId}": {
+   "delete": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   },
+   "get": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   }
+  },
+  "/idp": {
+   "get": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   }
+  },
+  "/idp/{idpId}/org/{orgId}": {
+   "put": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   }
+  },
+  "/idp/{idpId}/org": {
+   "get": {
+    "tags": [
+     "Identity Provider (Global)"
+    ]
+   }
+  },
+  "/org/{orgId}/blueprints": {
+   "get": {
+    "tags": [
+     "Blueprint"
+    ]
+   }
+  },
+  "/org/{orgId}/blueprint/{blueprintId}": {
+   "get": {
+    "tags": [
+     "Blueprint"
+    ]
+   }
+  },
+  "/org/{orgId}/api-key/{apiKeyId}": {
+   "delete": {
+    "tags": [
+     "API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/api-key/{apiKeyId}/actions": {
+   "get": {
+    "tags": [
+     "API Key"
+    ]
+   },
+   "post": {
+    "tags": [
+     "API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/api-keys": {
+   "get": {
+    "tags": [
+     "API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/api-key": {
+   "put": {
+    "tags": [
+     "API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/request": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/analytics": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai/export": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai/usage/filters": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai/usage/overview": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai/usage/providers": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai/usage/resources": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai/usage/users-roles": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/logs/ai/usage/virtual-api-keys": {
+   "get": {
+    "tags": [
+     "Logs"
+    ]
+   }
+  },
+  "/org/{orgId}/labels": {
+   "get": {
+    "tags": [
+     "Label"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Label"
+    ]
+   }
+  },
+  "/org/{orgId}/label/{labelId}": {
+   "patch": {
+    "tags": [
+     "Label"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Label"
+    ]
+   }
+  },
+  "/org/{orgId}/label/{labelId}/attach": {
+   "put": {
+    "tags": [
+     "Label"
+    ]
+   }
+  },
+  "/org/{orgId}/label/{labelId}/detach": {
+   "put": {
+    "tags": [
+     "Label"
+    ]
+   }
+  },
+  "/org/{orgId}/ai-provider": {
+   "put": {
+    "tags": [
+     "AI Provider"
+    ]
+   }
+  },
+  "/org/{orgId}/ai-providers": {
+   "get": {
+    "tags": [
+     "AI Provider"
+    ]
+   }
+  },
+  "/ai-provider/{providerId}": {
+   "get": {
+    "tags": [
+     "AI Provider"
+    ]
+   },
+   "post": {
+    "tags": [
+     "AI Provider"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "AI Provider"
+    ]
+   }
+  },
+  "/org/{orgId}/ai-provider/{niceId}": {
+   "get": {
+    "tags": [
+     "AI Provider"
+    ]
+   }
+  },
+  "/ai-provider/{providerId}/model": {
+   "put": {
+    "tags": [
+     "AI Model"
+    ]
+   }
+  },
+  "/ai-provider/{providerId}/models": {
+   "get": {
+    "tags": [
+     "AI Model"
+    ]
+   }
+  },
+  "/ai-provider/{providerId}/catalog-models": {
+   "get": {
+    "tags": [
+     "AI Model"
+    ]
+   }
+  },
+  "/org/{orgId}/ai-catalog-models": {
+   "get": {
+    "tags": [
+     "AI Model"
+    ]
+   }
+  },
+  "/ai-model/{modelId}": {
+   "get": {
+    "tags": [
+     "AI Model"
+    ]
+   },
+   "post": {
+    "tags": [
+     "AI Model"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "AI Model"
+    ]
+   }
+  },
+  "/org/{orgId}/redirects": {
+   "get": {
+    "tags": [
+     "Redirect"
+    ]
+   }
+  },
+  "/org/{orgId}/redirects/{redirectId}": {
+   "get": {
+    "tags": [
+     "Redirect"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Redirect"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Redirect"
+    ]
+   }
+  },
+  "/org/{orgId}/redirect/{niceId}": {
+   "get": {
+    "tags": [
+     "Redirect"
+    ]
+   }
+  },
+  "/org/{orgId}/ai-budget": {
+   "put": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/org/{orgId}/ai-budgets": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/ai-provider/{providerId}/ai-budgets": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/ai-model/{modelId}/ai-budgets": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/resource/{resourceId}/ai-budgets": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/ai-budgets": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/role/{roleId}/ai-budgets": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/virtual-api-key/{virtualApiKeyId}/ai-budgets": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/ai-budget/{budgetId}": {
+   "get": {
+    "tags": [
+     "AI Budget"
+    ]
+   },
+   "post": {
+    "tags": [
+     "AI Budget"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "AI Budget"
+    ]
+   }
+  },
+  "/org/{orgId}/virtual-api-key": {
+   "put": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/virtual-api-keys": {
+   "get": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/my-virtual-api-keys": {
+   "get": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   }
+  },
+  "/virtual-api-key/{virtualApiKeyId}": {
+   "get": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   },
+   "post": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   },
+   "delete": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/my-virtual-api-keys/{virtualApiKeyId}": {
+   "get": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/virtual-api-keys/email-identity-keys": {
+   "post": {
+    "tags": [
+     "Virtual API Key"
+    ]
+   }
+  },
+  "/org/{orgId}/site/{niceId}": {
+   "get": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/site/{siteId}/approve": {
+   "post": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/site/{siteId}/reject": {
+   "post": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/site/{siteId}/restart": {
+   "post": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/org": {
+   "put": {
+    "tags": [
+     "Organization"
+    ]
+   }
+  },
+  "/admin/org/{orgId}": {
+   "delete": {
+    "tags": [
+     "Organization"
+    ]
+   }
+  },
+  "/org/{orgId}/resource": {
+   "put": {
+    "tags": [
+     "Public Resource (Legacy)"
+    ]
+   }
+  },
+  "/org/{orgId}/public-resource": {
+   "put": {
+    "tags": [
+     "Public Resource"
+    ]
+   }
+  },
+  "/role/{roleId}/add/{userId}": {
+   "post": {
+    "tags": [
+     "Role",
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/user": {
+   "put": {
+    "tags": [
+     "User"
+    ]
+   }
+  },
+  "/org/{orgId}/client": {
+   "put": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}/block": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/org/{orgId}/user/{userId}/client": {
+   "put": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}/verify-associations-cache": {
+   "get": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}/rebuild-associations-cache": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/org/{orgId}/site-resource": {
+   "put": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/org/{orgId}/private-resource": {
+   "put": {
+    "tags": [
+     "Private Resource"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/roles/add": {
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/roles/add": {
+   "post": {
+    "tags": [
+     "Private Resource",
+     "Role"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/roles/remove": {
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/roles/remove": {
+   "post": {
+    "tags": [
+     "Private Resource",
+     "Role"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/users/add": {
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/users/add": {
+   "post": {
+    "tags": [
+     "Private Resource",
+     "User"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/users/remove": {
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/users/remove": {
+   "post": {
+    "tags": [
+     "Private Resource",
+     "User"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/clients/add": {
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/clients/add": {
+   "post": {
+    "tags": [
+     "Private Resource",
+     "Client"
+    ]
+   }
+  },
+  "/client/{clientId}/site-resources": {
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/client/{clientId}/private-resources": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/site-resource/{siteResourceId}/clients/remove": {
+   "post": {
+    "tags": [
+     "Private Resource (Legacy)"
+    ]
+   }
+  },
+  "/private-resource/{resourceId}/clients/remove": {
+   "post": {
+    "tags": [
+     "Private Resource",
+     "Client"
+    ]
+   }
+  },
+  "/org/{orgId}/blueprint": {
+   "put": {
+    "tags": [
+     "Blueprint"
+    ]
+   }
+  },
+  "/re-key/{clientId}/regenerate-client-secret": {
+   "post": {
+    "tags": [
+     "Client"
+    ]
+   }
+  },
+  "/re-key/{siteId}/regenerate-site-secret": {
+   "post": {
+    "tags": [
+     "Site"
+    ]
+   }
+  },
+  "/re-key/{orgId}/regenerate-remote-exit-node-secret": {
+   "put": {
+    "tags": [
+     "Remote Exit Node"
+    ]
+   }
+  },
+  "/org/{orgId}/redirect": {
+   "put": {
+    "tags": [
+     "Redirect"
+    ]
+   }
+  },
+  "/": {
+   "get": {
+    "tags": []
+   }
+  },
+  "/openapi.json": {
+   "get": {
+    "tags": []
+   }
+  },
+  "/openapi.yaml": {
+   "get": {
+    "tags": []
+   }
+  }
+ }
+}
